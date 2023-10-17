@@ -16,10 +16,9 @@ public class TorchFlameLightAnimation : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if(time > Random.Range(0.08f,0.1f))
+        if(time > Random.Range(0.1f,0.3f))
         {
-            spotLight.intensity = Random.Range(0.7f,1.2f);
-            Debug.Log(time);
+            spotLight.intensity = Random.Range(0.7f,1.2f);         
             time = 0;
         }
         
